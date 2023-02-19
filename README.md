@@ -3,12 +3,12 @@
 
 # Description: 
 ```
->Following should be the database schema:
+> Following should be the database schema:
 1. ITEMS {ItemID (PK), ItemName, OpeningStock, ItemsReceived, ItemsIssued, UoM}
 2. INWARD {ReceiptNo (PK), ReceiptDate, ItemID (FK), QtyReceived}
 3. OUTWARD {IssueNo (PK), IssueDate, ItemID (FK), QtyIssued}
 
->The Application should have following pages:
+> The Application should have following pages:
 1. Item Managment Page - This is a form to add new items in the stock or to edit some items details. The form will containg following fields to be entered by user and full navigation and control buttons also should have validations as required on different fields:
 > Item ID - Allow user to enter Item ID and check whether this item exist in database. If exist it will load the item's details from the database and disply required information on this page, if Item ID not present it will ask for other details of this new item to be created.
 > Item Name - Name of the Raw Material.
@@ -29,12 +29,15 @@
 The Application Stock Management Dashboard
 > The dashboard should have (1) Common Header (2) Common Footer (3) Left Navigation Menu (4) Main page to display one of the above four pages based on selection of menu from the left navigation.
 ```
+
 # Demo Video
-##https://drive.google.com/file/d/1S63J96HPWXGe2C6s_ZLJTtewG58S7EXz/view?usp=share_link
+```
+> https://drive.google.com/file/d/1S63J96HPWXGe2C6s_ZLJTtewG58S7EXz/view?usp=share_link
+```
 
 # Important links:
 ```
->Home page: https://login2explore.com
->Register to use JsonPowerDB: http://api.login2explore.com
->JsonPowerDB Help: https://login2explore.com/jpdb/docs.html
+> Home page: https://login2explore.com
+> Register to use JsonPowerDB: http://api.login2explore.com
+> JsonPowerDB Help: https://login2explore.com/jpdb/docs.html
 ```
