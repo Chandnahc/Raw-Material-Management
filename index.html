@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AdminLTE 3 | Contact us</title>
+
+    <!-- Google Font: Source Sans Pro -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="./plugins/fontawesome-free/css/all.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="./dist/css/adminlte.min.css">
+</head>
+
+<style>
+    
+
+    #dummyCompenent {
+        margin-top: 15px;
+        height: 50vh;
+        overflow-y: scroll;
+    }
+
+    #dummyCompenent::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* Hide scrollbar for IE, Edge add Firefox */
+    #dummyCompenent {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        /* Firefox */
+    }
+</style>
+
+<body class="hold-transition sidebar-mini">
+    <!-- Site wrapper -->
+    <div class="wrapper">
+
+        <div id="commonHeader"></div>
+
+
+        <div id="dummyComponent"></div>
+
+
+        <div id="commonFooter"></div>
+
+    </div>
+    <!-- ./wrapper -->
+
+    <!-- jQuery -->
+    <script src="./plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="./plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="./dist/js/adminlte.min.js"></script>
+    <!-- AdminLTE for demo purposes -->
+    <script src="./dist/js/demo.js"></script>
+    <script>
+        $('#commonHeader').load('./header.html')
+        $('#commonFooter').load('./footer.html')
+    </script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

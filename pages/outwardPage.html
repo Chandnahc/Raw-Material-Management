@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+
+<style>
+    .buttonss {
+        list-style: none;
+        display: flex;
+        justify-content: space-evenly;
+    }
+</style>
+
+<body>
+    <div class="content-wrapper">
+
+
+        <section class="content-header">
+            <div class="container-fluid">
+                <div class="row mb-2">
+                    <div class="col-sm-6">
+                        <h1>Issue Item</h1>
+                    </div>
+                    <div class="col-sm-6">
+                        <ol class="breadcrumb float-sm-right">
+                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item active">Issue Item</li>
+                        </ol>
+                    </div>
+                </div>
+            </div><!-- /.container-fluid -->
+        </section>
+        <section class="content">
+            <div class="card">
+                <div class="card-body row">
+                    <div class="col-9">
+
+                        <form method="post" id="itemform">
+                            <div class="form-group row">
+                                <label for="issueno" class="col-form-label col-sm-3 text-center my-auto">Issue No :
+                                </label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control" onchange="getIssueFromID()" id="issueno">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="issuedate" class="col-form-label col-sm-3 text-center my-auto">Issue Date :
+                                </label>
+                                <div class="col-sm-9">
+                                    <input type="date" class="form-control" id="issuedate">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="itemid" class="col-form-label col-sm-3 text-center my-auto">Item ID :
+                                </label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control" id="itemid" onchange="getItemFromID()">
+                                    <small id="nameFound"></small>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="quantity" class="col-form-label col-sm-3 text-center my-auto">Quantity : </label>
+                                <div class="col-sm-9">
+                                    <input type="number" class="form-control" id="quantity" onchange="checkQuantity()">
+                                    <small id="moreQuant"></small>
+                                </div>
+                            </div>
+                        </form>
+                        <div>
+                            <nav>
+                                <ul class="buttonss">
+                                    <li>
+                                        <button type="button" class="btn btn-lg btn-primary" id="new"
+                                            onclick="newForm()">New</button>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="btn btn-lg btn-primary" id="save"
+                                            onclick="saveData()" disabled>Save</button>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="btn btn-lg btn-primary" id="edit"
+                                            onclick="editData()">Edit</button>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="btn btn-lg btn-primary" id="change"
+                                            onclick="changeData()" disabled>Change</button>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="btn btn-lg btn-primary" id="reset"
+                                            onclick="resetForm()" disabled>Reset</button>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <nav>
+                                <ul class="buttonss">
+                                    <li>
+                                        <button type="button" class="btn btn-lg btn-primary" id="first"
+                                            onclick="getFirst()">First</button>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="btn btn-lg btn-primary" id="prev"
+                                            onclick="getPrev()">Previous</button>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="btn btn-lg btn-primary" id="next"
+                                            onclick="getNext()" disabled>Next</button>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="btn btn-lg btn-primary" id="last"
+                                            onclick="getLast()">Last</button>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+        </section>
+    </div>
+    <script type="text/javascript" src="http://login2explore.com/jpdb/resources/js/0.0.4/jpdb-commons.js"></script>
+    <script type="text/javascript" src="../js/outward.js"></script>
+</body>
+
+</html>
