@@ -1,5 +1,5 @@
 var jpdbBaseURL = "http://api.login2explore.com:5577";
-var connToken = "90938234|-31949273530510110|90952465";
+var connToken = "enter_your_connection_token";
 
 var jpdbIRL = '/api/irl';
 var jpdbIML = '/api/iml';
